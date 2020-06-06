@@ -8,6 +8,7 @@ public abstract class Polymorph {
     private int width;
     private int height;
     
+    MovingMorph move = new MovingMorph();
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     
     public int getX() {
@@ -46,7 +47,11 @@ public abstract class Polymorph {
     }
     
     public void update(){
+   	 Random r = new Random;
+   	 Random rand = new Random;
    	 
+   	 move.x = r;
+   	 move.y = rand;
     }
     
     public abstract void draw(Graphics g);
