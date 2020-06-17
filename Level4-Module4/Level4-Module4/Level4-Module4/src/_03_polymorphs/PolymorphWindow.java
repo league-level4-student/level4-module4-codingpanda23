@@ -19,6 +19,7 @@ public class PolymorphWindow extends JPanel implements ActionListener{
     
     Polymorph bluePoly;
     RedMorph redPoly;
+    MovingMorph movingPoly;
     
     public static void main(String[] args) {
    	 new PolymorphWindow().buildWindow();
@@ -34,11 +35,12 @@ public class PolymorphWindow extends JPanel implements ActionListener{
    	 
    	 bluePoly = new BluePolymorph(50, 50);
    	 redPoly = new RedMorph(50, 50);
+   	 movingPoly = new movingPoly(50, 50);
    	 
    	 timer = new Timer(1000 / 30, this);
    	 timer.start();
     }
-    
+
     public void paintComponent(Graphics g){
     //draw background
    	 g.setColor(Color.LIGHT_GRAY);
@@ -54,9 +56,13 @@ public class PolymorphWindow extends JPanel implements ActionListener{
    	 repaint();
    	 bluePoly.update();
    	 redPoly.update();
-   	 
+   	 movingPoly.update();
     }
 }
+
+
+
+
 
 
 
