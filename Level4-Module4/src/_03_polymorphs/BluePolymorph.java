@@ -12,7 +12,7 @@ public class BluePolymorph extends Polymorph{
 	@Override
 	public void draw(Graphics g) {
 		g.setColor(Color.blue);
-		g.drawRect(x, y, width, height);
+		g.fillRect(x, y, 50, 50);
 	}
 	
 }

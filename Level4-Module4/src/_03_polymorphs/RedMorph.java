@@ -3,7 +3,7 @@ package _03_polymorphs;
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class RedMorph extends Polymorph{
+public class RedMorph extends Polymorph {
 
 	RedMorph(int x, int y) {
 		super(x, y);
@@ -12,10 +12,7 @@ public class RedMorph extends Polymorph{
 	@Override
 	public void draw(Graphics g) {
 		g.setColor(Color.red);
-		g.drawRect(x, y, width, height);
-		
+		g.fillRect(x, y, width, height);
 	}
-	
-	
 
 }

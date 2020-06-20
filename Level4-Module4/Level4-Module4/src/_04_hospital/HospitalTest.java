@@ -112,20 +112,3 @@ assertTrue(testDoctor.getPatients().size() == 3);
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
